@@ -5,13 +5,13 @@ import { initializeAuth, indexedDBLocalPersistence } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAI532BEBC_wMJfMwJUyriEjjRmgmIqHSs",
-    authDomain: "foodreviewappdb.firebaseapp.com",
-    databaseURL: "https://foodreviewappdb-default-rtdb.firebaseio.com",
-    projectId: "foodreviewappdb",
-    storageBucket: "foodreviewappdb.appspot.com",
-    messagingSenderId: "216932637756",
-    appId: "1:216932637756:web:bfbf352346f41c16933739"
+    apiKey: "AIzaSyCH_JoJxqYCJwpm0Gm9fSeW8Tr7JOFzCQo",
+    authDomain: "foodo-1a8f3.firebaseapp.com",
+    projectId: "foodo-1a8f3",
+    storageBucket: "foodo-1a8f3.appspot.com",
+    messagingSenderId: "824831505155",
+    appId: "1:824831505155:web:b954f23d55cca71a0aef36",
+    measurementId: "G-K4YSPPM3PV"
   };
 
 // Initialize Firebase

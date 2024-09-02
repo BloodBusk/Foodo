@@ -1,7 +1,7 @@
 class db{
-    postUrl = "https://foodreviewappdb-default-rtdb.firebaseio.com/posts/.json";
-    userUrl = "https://foodreviewappdb-default-rtdb.firebaseio.com/users/.json";
-    loginUrl = "https://foodreviewappdb-default-rtdb.firebaseio.com/login/.json";
+    postUrl = "https://foodo-1a8f3-default-rtdb.europe-west1.firebasedatabase.app/posts/.json";
+    userUrl = "https://foodo-1a8f3-default-rtdb.europe-west1.firebasedatabase.app/users/.json";
+    loginUrl = "https://foodo-1a8f3-default-rtdb.europe-west1.firebasedatabase.app/login/.json";
 
     async fetchPost(){
        const response = await fetch(this.postUrl);

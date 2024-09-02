@@ -24,12 +24,11 @@ export default function Home() {
   const history = useHistory();
   const [present, dismiss] = useIonLoading();
 
-
   async function postsArr() {
     present();
-    
+
     const data = await dbT.getPost();
-    
+
     // map object into an array with objects
     const postsArray = Object.keys(data).map((key) => ({
       key: key,
@@ -55,15 +54,13 @@ export default function Home() {
   }
 
   useIonViewWillEnter(() => {
-    if(uc.checkUserLoggedIn()){
+    if (uc.checkUserLoggedIn()) {
       postsArr();
-    }else{
+    } else {
       history.replace("/login");
       window.location.reload();
     }
   });
-
-
 
   return (
     <IonPage>
@@ -72,9 +69,10 @@ export default function Home() {
         <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
           <IonRefresherContent></IonRefresherContent>
         </IonRefresher>
-        {posts.map((post) => (
-          <Post post={post} key={post.key} reload={refresh} />
-        ))}
+        {posts &&
+          posts?.map((post) => (
+            <Post post={post} key={post.key} reload={refresh} />
+          ))}
       </IonContent>
     </IonPage>
   );
